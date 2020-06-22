@@ -32,7 +32,7 @@
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
           <img srcset='firefox_logo-only_RGB_120.png 120w,
                        firefox_logo-only_RGB_400.png 400w'
-               sizes='(max-width: 480px) 120px,
+               sizes='(max-width: 48k0px) 120px,
                       400px'
                src='firefox_logo-only_RGB_400.png' alt='下载 Firefox — 自由的网络浏览器 — Mozilla'>
         </a>
@@ -58,6 +58,11 @@
 
       <div class="red-panda">
         <!-- 插入照片元素 -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda-600.png">
+          <source media="(min-width: 601px)" srcset="red-panda-1200.png">
+          <img src="red-panda-1200.png" alt="一张小熊猫的艺术照">
+        </picture>
       </div>
 
     </main>
